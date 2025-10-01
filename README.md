@@ -1,6 +1,5 @@
 # AI Chat Markdown Export
 
-中文说明 | Chinese Documentation
 
 ## 项目简介
 AI Chat Markdown Export 是一个用户脚本（UserScript），用于一键将 ChatGPT / Gemini / Grok (X AI) 等网页端对话完整导出为结构化、干净的 Markdown 文件，自动处理：
@@ -73,10 +72,10 @@ def quicksort(arr):
     right = [x for x in arr if x > pivot]
     return quicksort(left) + mid + quicksort(right)
 ```
-```
+
 
 ## 命名规则
-- 文件名包含时间戳与会话标题：`2025-09-27_16-22-23_计算机网络 Pinned chat.md`
+- 文件名包含时间戳与会话标题：`2025-09-27_16-22-23_XXX.md`
 - 若标题不可用或为空，则回退为 `chat_export`
 - 非法字符会被替换为下划线 `_`
 
@@ -100,12 +99,6 @@ Git clone https://github.com/YunAsimov/AI-Chat-Md-Export.git
 ```
 修改脚本后，可直接在浏览器扩展管理器中重新载入。由于这是纯前端脚本，不需要构建工具。
 
-## 许可证
-MIT License. 详见仓库根目录下 LICENSE（若缺失请补充）。
-
-## 致谢
-- OpenAI / Google / X 提供的平台界面
-- Tampermonkey / Violentmonkey 等优秀脚本运行环境
 
 ## 反馈
 问题 / 建议请提交 Issue：
